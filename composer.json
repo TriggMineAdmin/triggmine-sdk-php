@@ -1,0 +1,25 @@
+{
+    "name": "triggmine/triggminesdk",
+    "description": "PHP SDK library for TriggMine API",
+    "keywords": ["triggmine", "composer", "package"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TriggMine"
+        }
+    ],
+    "type": "project",
+    "require": {
+		"php": ">=5.4",
+		"guzzlehttp/guzzle": "^6.2"
+    },
+	"require-dev": {
+		"phpunit/phpunit": "5.2.*"
+    },
+	"autoload": {
+        "psr-4": {
+            "TriggMineSDK\\Events\\": "src/Events",
+            "TriggMineSDK\\Models\\": "src/Models"
+        }
+    }
+}
