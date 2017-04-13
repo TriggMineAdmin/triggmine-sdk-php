@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "endpoints": {
+    "*/*": {
+      "endpoint": "api.triggmine.com/{service}"
+    },
+    "*/commerce": {
+      "endpoint": "webapi-v3.azurewebsites.net/"
+    }
+  }
+}
+
