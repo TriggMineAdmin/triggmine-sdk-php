@@ -8,6 +8,7 @@
             "name": "TriggMine"
         }
     ],
+    "version": "dev-dev",
     "type": "project",
     "require": {
 		"php": ">=5.4",
