@@ -1,5 +1,5 @@
 {
-    "name": "triggmine/triggminesdk",
+    "name": "triggmine/triggmine-sdk-php",
     "description": "PHP SDK library for TriggMine API",
     "keywords": ["triggmine", "composer", "package"],
     "license": "MIT",
