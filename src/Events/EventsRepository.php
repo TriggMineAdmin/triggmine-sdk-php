@@ -1,8 +1,22 @@
 <?php
+/**
+  * A dictionary to get an event url by its class name.
+  * 
+  */
 namespace TriggMineSDK\Events;
 
+/**
+* Contains a dictionary to get an event url by its class name.
+*/
 class EventsRepository
 {
+    /**
+      * Gets event url by its class name.
+      *
+      * @param string $type with a class name of the event.
+      *
+      * @return string event url
+      */
     public function GetEventUrl( $type )
     {
         $urlRepository = array(

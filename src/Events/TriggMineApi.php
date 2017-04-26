@@ -1,4 +1,8 @@
 <?php
+/**
+  * The main method which sends data to TriggMine.
+  *
+  */
 namespace TriggMineSDK\Events;
 
 require 'EventsRepository.php';
@@ -7,12 +11,33 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Exception\RequestException;
 
+/**
+  * The main class which contains API credentials and makes calls to TriggMine.
+  */
 class TriggMineApi
 {
+    /**
+      * Guzzle HTTP Client with TriggMine API credentials for making calls.
+      */
     public $client;
+    
+    /**
+      * API URL value from the Integration tab of you TriggMine dashboard.
+      */
     protected $apiUrl;
+    
+    /**
+      * API key value from the Integration tab of you TriggMine dashboard.
+      */
     protected $apiKey;
-
+    
+    /**
+      * Creates a TriggMine client with a certain API URL and API key, which you can find in your TriggMine Dashboard.
+      *
+      * @param string $apiUrl with API URL value from the Integration tab of you TriggMine dashboard.
+      * @param string $apiKey with API key value from the Integration tab of you TriggMine dashboard.
+      *
+      */
     public function __construct( $apiUrl, $apiKey )
     {
         $this->client = new Client([
@@ -28,6 +53,13 @@ class TriggMineApi
         $this->apiKey = $apiKey;
     }
     
+    /**
+      * Detects an appropriate TriggMine API URL and sends data to it.
+      *
+      * @param class $eventDto with a set of attributes (data to be sent to TriggMine).
+      *
+      * @return array $response with a status code and message (success or error) from TriggMine
+      */
     public function SendEvent( $eventDto )
     {
         $response = "";
