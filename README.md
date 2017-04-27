@@ -12,14 +12,15 @@ To install TriggMine SDK via Composer, run the following command:
 `$ composer require triggmine/triggmine-sdk-php`
 
 ## How-to
-TriggMine API сan take 8 types of events. All events models send through SendEvent method.
+TriggMine API сan take 9 types of events. All events models send through SendEvent method.
 
 #### Event list with model type 
 **Event type** | **Model** |
 --|--|
 Registration | ProspectEvent |
 Cart | CartEvent |
-History | HistoryEvents |
+Order History | OrderHistoryEvent |
+Customer History | CustomerHistoryEvent |
 Login | LoginEvent |
 Logout | LogoutEvent |
 Navigation | NavigationEvent |
