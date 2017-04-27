@@ -22,12 +22,12 @@ class TriggMineApi
     public $client;
     
     /**
-      * API URL value from the Integration tab of you TriggMine dashboard.
+      * API URL value from the Integration tab of your TriggMine dashboard.
       */
     protected $apiUrl;
     
     /**
-      * API key value from the Integration tab of you TriggMine dashboard.
+      * API key value from the Integration tab of your TriggMine dashboard.
       */
     protected $apiKey;
     

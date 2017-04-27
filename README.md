@@ -79,10 +79,6 @@ user_agent|User-Agent header. Optional parameter|
 
 For more detailed documentation see: https://triggmine-php-sdk-triggmine.c9users.io/triggminesdk/docs/
 
-Device hash ClientJS*, FingerprintJS*- We recommend to use ClientJS and FingerprintJS library for definition unique hash of client device and software. It's need for identify client without his loging.
-
-Sources
-https://clientjs.org/
-https://valve.github.io/fingerprintjs/
+Device hash [ClientJS](https://clientjs.org/)*, [FingerprintJS](https://valve.github.io/fingerprintjs/)*- We recommend to use ClientJS and FingerprintJS library for definition unique hash of client device and software. It's need for identify client without his loging.
 
 Customer Id* - Unique Id of a Customer in your DB.
